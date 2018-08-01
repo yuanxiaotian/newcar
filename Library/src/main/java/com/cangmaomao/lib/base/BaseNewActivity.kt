@@ -1,11 +1,9 @@
 package com.cangmaomao.lib.base
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.AppCompatTextView
 import android.support.v7.widget.Toolbar
-import com.cangmaomao.lib.R
 import kotlinx.android.synthetic.main.toolbar_view.*
 
 abstract class BaseNewActivity<T : BasePresenter> : AppCompatActivity(), BaseView<T> {
@@ -21,11 +19,12 @@ abstract class BaseNewActivity<T : BasePresenter> : AppCompatActivity(), BaseVie
     //布局ID
     abstract fun layViewId(): Int
 
+    //fragment
+    abstract fun addViewId(): Int
+
     //初始化
     abstract fun initView()
 
-    //fragment
-    abstract fun addViewId(): Int
 
     fun setToolbarTitle(id: AppCompatTextView = toolbar_title, str: String) {
         id.text = str
