@@ -76,17 +76,17 @@ public final class R {
         public static int gone = 0x7f0c00a6;
         public static int invisible = 0x7f0c00b8;
         public static int left = 0x7f0c00c1;
-        public static int none = 0x7f0c00d9;
-        public static int packed = 0x7f0c00e1;
-        public static int parent = 0x7f0c00e3;
-        public static int percent = 0x7f0c00e7;
-        public static int right = 0x7f0c00ef;
-        public static int spread = 0x7f0c0111;
-        public static int spread_inside = 0x7f0c0112;
-        public static int standard = 0x7f0c0129;
-        public static int start = 0x7f0c012a;
-        public static int top = 0x7f0c0152;
-        public static int wrap = 0x7f0c016b;
+        public static int none = 0x7f0c00dc;
+        public static int packed = 0x7f0c00e4;
+        public static int parent = 0x7f0c00e6;
+        public static int percent = 0x7f0c00ea;
+        public static int right = 0x7f0c00f2;
+        public static int spread = 0x7f0c0114;
+        public static int spread_inside = 0x7f0c0115;
+        public static int standard = 0x7f0c012c;
+        public static int start = 0x7f0c012d;
+        public static int top = 0x7f0c0155;
+        public static int wrap = 0x7f0c016e;
     }
     public static final class styleable {
         public static int[] ConstraintLayout_Layout = { 0x01010120, 0x0101011f, 0x01010140, 0x0101013f, 0x010100c4, 0x7f04003e, 0x7f04003f, 0x7f04005c, 0x7f040071, 0x7f040072, 0x7f0400e3, 0x7f0400e4, 0x7f0400e5, 0x7f0400e6, 0x7f0400e7, 0x7f0400e8, 0x7f0400e9, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 0x7f0400ed, 0x7f0400ee, 0x7f0400ef, 0x7f0400f0, 0x7f0400f1, 0x7f0400f2, 0x7f0400f3, 0x7f0400f4, 0x7f0400f5, 0x7f0400f6, 0x7f0400f7, 0x7f0400f8, 0x7f0400f9, 0x7f0400fa, 0x7f0400fb, 0x7f0400fc, 0x7f0400fd, 0x7f0400fe, 0x7f0400ff, 0x7f040100, 0x7f040101, 0x7f040102, 0x7f040103, 0x7f040104, 0x7f040105, 0x7f040106, 0x7f040107, 0x7f040108, 0x7f040109, 0x7f04010a, 0x7f04010b, 0x7f04010d, 0x7f04010e, 0x7f04010f, 0x7f040110, 0x7f040111, 0x7f040112, 0x7f040113, 0x7f040114, 0x7f040117 };

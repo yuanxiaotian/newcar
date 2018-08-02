@@ -20,6 +20,7 @@
     <color name="c_t_2c_99">#992c2c2c</color>
     <color name="c_t_fc">#99fcfcfc</color>
     <color name="c_w">#ffffffff</color>
+    <color name="c_w_20">#20ffffff</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#1E90FF</color>
     <color name="colorPrimaryDark">#1C86EE</color>
@@ -273,6 +274,7 @@
     <string name="carOwner_photo">车主证件</string>
     <string name="car_card_photo">车辆证件</string>
     <string name="car_list">车辆列表</string>
+    <string name="car_location">车辆定位</string>
     <string name="car_owner">车主</string>
     <string name="car_owner_info">车主信息</string>
     <string name="car_owner_name">车主姓名</string>

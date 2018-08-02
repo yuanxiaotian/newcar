@@ -48,5 +48,6 @@
     <color name="c_t_2c_50">#502c2c2c</color><!--t:带透明度-->
     <color name="c_t_2c_99">#992c2c2c</color><!--t:带透明度-->
     <color name="c_t_00_99">#70200000</color><!--t:带透明度-->
+    <color name="c_w_20">#20ffffff</color>
 
 </resources>

@@ -5,6 +5,8 @@ import com.cangmaomao.lib.base.BaseActivity
 import com.cangmaomao.lib.base.BasePresenter
 import com.cangmaomao.lib.event.AppEvent
 import com.cangmaomao.lib.utils.StatusBarUtil
+import com.xuliucar.carlocation.contract.CarLocationContract
+import com.xuliucar.carlocation.ui.CarLocationFragment
 import com.xuliucar.newcar.ui.fragment.MainFragment
 import com.xuliucar.me.ui.fragment.*
 import com.xuliucar.newcar.R
@@ -21,6 +23,7 @@ class MainActivity : BaseActivity<BasePresenter>() {
 
     override fun initView() {
         StatusBarUtil.transparencyBar(this)
+        StatusBarUtil.setStatusBarColor(this, R.color.c_1e)
         val flag = intent.getIntExtra("flag", 0)
         loadRootFragment(addViewId(), if (flag == 110) LoginFragment() else MainFragment(), false, false)
     }
@@ -37,6 +40,7 @@ class MainActivity : BaseActivity<BasePresenter>() {
             f_reg -> start(RegFragment())
             f_feedBack -> start(FeedBack())
             f_informationCenter -> start(InformationCenter())
+            f_carLocationFragment -> start(CarLocationFragment())
             f_peopleList -> {
                 val c = PeopleList()
                 c.arguments = event.bundle

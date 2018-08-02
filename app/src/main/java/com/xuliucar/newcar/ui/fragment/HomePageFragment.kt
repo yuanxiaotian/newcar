@@ -7,6 +7,7 @@ import android.support.v7.widget.AppCompatTextView
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
+import com.cangmaomao.lib.action.f_carLocationFragment
 import com.cangmaomao.lib.action.f_notice
 import com.cangmaomao.lib.base.BaseNewFragment
 import com.cangmaomao.lib.config.AppPower
@@ -46,6 +47,8 @@ class HomePageFragment : BaseNewFragment<HomePageContract.Presenter>(), HomePage
         StatusBarUtil.transparencyBar(activity)
         HomePagePresenter(this)
         p.start()
+
+        tv_location.setOnClickListener { EventBus.getDefault().post(AppEvent(f_carLocationFragment, null)) }
 
         setListener()
     }

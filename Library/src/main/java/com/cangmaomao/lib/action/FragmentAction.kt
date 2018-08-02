@@ -88,3 +88,6 @@ val f_peopleDetail = 0x01101139
 
 //显示大图片
 val f_showBigImage = 0x01101140
+
+//车辆地位
+val f_carLocationFragment = 0x01101141

@@ -1,37 +1,37 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+ADDED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
 	package
-		ADDED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:11-39
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
+		ADDED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:11-39
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-		ADDED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+		ADDED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+		ADDED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
 	android:versionCode
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-		ADDED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+		ADDED from D:\mine\newcar\Library\src\main\AndroidManifest.xml:1:1-42
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
 uses-sdk
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-		ADDED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+		ADDED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-		ADDED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
-		INJECTED from D:\Program Files\mine\newcar\Library\src\main\AndroidManifest.xml
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+		ADDED from D:\mine\newcar\Library\src\main\AndroidManifest.xml
+		INJECTED from D:\mine\newcar\Library\src\main\AndroidManifest.xml

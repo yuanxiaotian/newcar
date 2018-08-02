@@ -34,11 +34,11 @@ abstract class BaseNewFragment<T : BasePresenter> : SupportFragment(), BaseView<
     //布局ID
     abstract fun layViewId(): Int
 
-    //初始化
-    abstract fun initView(savedInstanceState: Bundle?, view: View = mContainer)
-
     //fragment
     abstract fun addViewId(): Int
+
+    //初始化
+    abstract fun initView(savedInstanceState: Bundle?, view: View = mContainer)
 
 
     fun setToolbarTitle(str: String, id: AppCompatTextView = toolbar_title) {
@@ -84,9 +84,9 @@ abstract class BaseNewFragment<T : BasePresenter> : SupportFragment(), BaseView<
         p = presenter
     }
 
-    fun <K> initArguments(key: String): K {
+    fun <K> initArguments(key: String, flag: Any): K {
         var data: K? = null
-        when (data) {
+        when (flag) {
             is String -> data = arguments!!.getString(key) as K
             is Int -> data = arguments!!.getInt(key) as K
             is Float -> data = arguments!!.getFloat(key) as K

@@ -17,10 +17,10 @@ public final class R {
         public static int stackFromEnd = 0x7f0401b8;
     }
     public static final class color {
-        public static int recycler_swipe_color_loading_color1 = 0x7f06007d;
-        public static int recycler_swipe_color_loading_color2 = 0x7f06007e;
-        public static int recycler_swipe_color_loading_color3 = 0x7f06007f;
-        public static int recycler_swipe_color_text_gray = 0x7f060080;
+        public static int recycler_swipe_color_loading_color1 = 0x7f06007e;
+        public static int recycler_swipe_color_loading_color2 = 0x7f06007f;
+        public static int recycler_swipe_color_loading_color3 = 0x7f060080;
+        public static int recycler_swipe_color_text_gray = 0x7f060081;
     }
     public static final class dimen {
         public static int item_touch_helper_max_drag_scroll_per_frame = 0x7f08008e;
@@ -42,12 +42,12 @@ public final class R {
         public static int recycler_swipe_view_load_more = 0x7f0f0045;
     }
     public static final class string {
-        public static int loading_default_messsage = 0x7f15015e;
-        public static int recycler_swipe_click_load_more = 0x7f1501ac;
-        public static int recycler_swipe_data_empty = 0x7f1501ad;
-        public static int recycler_swipe_load_error = 0x7f1501ae;
-        public static int recycler_swipe_load_more_message = 0x7f1501af;
-        public static int recycler_swipe_more_not = 0x7f1501b0;
+        public static int loading_default_messsage = 0x7f15015f;
+        public static int recycler_swipe_click_load_more = 0x7f1501ad;
+        public static int recycler_swipe_data_empty = 0x7f1501ae;
+        public static int recycler_swipe_load_error = 0x7f1501af;
+        public static int recycler_swipe_load_more_message = 0x7f1501b0;
+        public static int recycler_swipe_more_not = 0x7f1501b1;
     }
     public static final class style {
         public static int loadingDialog = 0x7f16019a;

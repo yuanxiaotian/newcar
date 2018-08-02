@@ -29,44 +29,47 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="190dp"
-        android:background="@drawable/login_img_bg"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioGroup
+            android:id="@+id/login_type"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
 
             <RadioButton
+                android:id="@+id/login_company"
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/login_qiehuan_but"
+                android:background="@drawable/shape_button_white"
                 android:button="@null"
-                android:checked="true"
                 android:gravity="center"
                 android:text="公司用户"
                 android:textColor="@drawable/btn_radio_selector"
-                android:textSize="@dimen/text_size" />
+                android:textSize="@dimen/big_text_size" />
 
 
             <RadioButton
+                android:id="@+id/login_personal"
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/login_qiehuan_but"
+                android:background="@drawable/shape_button_white"
                 android:button="@null"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="公司用户"
                 android:textColor="@drawable/btn_radio_selector"
-                android:textSize="@dimen/text_size" />
+                android:textSize="@dimen/big_text_size" />
 
 
         </RadioGroup>
@@ -77,80 +80,40 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/et_company"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@drawable/shape_edit_line"
-                android:drawableLeft="@drawable/home"
-                android:drawablePadding="5dp"
-                android:gravity="center_vertical"
-                android:hint="@string/please_input_company"
-                android:paddingLeft="8dp"
-                android:text="demo"
-                android:textSize="15sp" />
-
-            <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/et_account"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/shape_edit_line"
-                android:drawableLeft="@drawable/name"
-                android:drawablePadding="5dp"
-                android:gravity="center_vertical"
-                android:hint="@string/input_username"
-                android:paddingLeft="8dp"
-                android:text="admin"
-                android:textSize="15sp" />
-
-
-            <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/et_pwd"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/shape_edit_line"
-                android:drawableLeft="@drawable/mima_icon"
-                android:drawablePadding="5dp"
-                android:gravity="center_vertical"
-                android:hint="@string/input_password"
-                android:paddingLeft="8dp"
-                android:text="adminadmin"
-                android:textSize="15sp" />
         </LinearLayout>
 
 
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/shape_button"
             android:text="@string/login"
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@+id/login_box"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/login_box" />
 
 
     </android.support.constraint.ConstraintLayout>
 
 
-
     <android.support.v7.widget.AppCompatTextView
-    android:id="@+id/register"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="5dp"
-    android:padding="15dp"
-    android:text="@string/reg"
-    android:textColor="#5589f8" />
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="15dp"
+        android:text="@string/reg"
+        android:textColor="#5589f8" />
 </android.support.constraint.ConstraintLayout>

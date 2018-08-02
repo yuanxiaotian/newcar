@@ -1,6 +1,7 @@
 package com.xuliucar.me.ui.fragment
 
 import android.os.Bundle
+import android.support.v7.widget.AppCompatEditText
 import android.text.TextUtils
 import android.view.View
 import com.cangmaomao.lib.action.f_main
@@ -8,8 +9,6 @@ import com.cangmaomao.lib.action.f_reg
 import com.cangmaomao.lib.base.BaseNewFragment
 import com.cangmaomao.lib.event.AppEvent
 import com.cangmaomao.lib.utils.SPUtils.create
-import com.cangmaomao.lib.utils.StatusBarUtil
-import com.cangmaomao.lib.utils.shortToast
 import com.cangmaomao.lib.utils.toast
 import com.xuliucar.me.R
 import com.xuliucar.me.contract.MineContract
@@ -20,11 +19,15 @@ import org.greenrobot.eventbus.EventBus
 
 class LoginFragment : BaseNewFragment<MineContract.Presenter>(), MineContract.LoginView {
 
+
+    private lateinit var loginView: View
+
     override fun layViewId(): Int = R.layout.a_login
     override fun addViewId(): Int = 0
 
     override fun initView(savedInstanceState: Bundle?, view: View) {
         MinePresenter(this)
+
         login.setOnClickListener {
             try {
                 p.loadData()
@@ -33,8 +36,29 @@ class LoginFragment : BaseNewFragment<MineContract.Presenter>(), MineContract.Lo
             }
         }
         register.setOnClickListener { EventBus.getDefault().post(AppEvent(f_reg, null)) }
+
+        login_type.setOnCheckedChangeListener { _, checkedId ->
+            initShowLoginView(checkedId)
+        }
+        login_type.check(R.id.login_company)
     }
 
+    override fun initShowLoginView(id: Int) {
+        when (id) {
+            R.id.login_company -> {
+                login_box.removeAllViews()
+                loginView = View.inflate(_mActivity, R.layout.impl_login_company, null)
+                login_box.addView(loginView)
+                login_box_bg.setBackgroundResource(R.drawable.login_img_bg)
+            }
+            R.id.login_personal -> {
+                login_box.removeAllViews()
+                loginView = View.inflate(_mActivity, R.layout.impl_login_personal, null)
+                login_box.addView(loginView)
+                login_box_bg.setBackgroundResource(R.drawable.login_img_right_bg)
+            }
+        }
+    }
 
     override fun showSuccess(data: LoginInfo) {
         val bean = data.data
@@ -48,17 +72,20 @@ class LoginFragment : BaseNewFragment<MineContract.Presenter>(), MineContract.Lo
 
 
     override fun getCompany(): String {
-        val company = et_company.text.toString()
+        val view = loginView.findViewById<AppCompatEditText>(R.id.et_company)
+        val company = view.text.toString()
         return if (TextUtils.isEmpty(company)) throw IllegalStateException("公司名称不能为空!") else company
     }
 
     override fun getAccount(): String {
-        val account = et_account.text.toString()
+        val view = loginView.findViewById<AppCompatEditText>(R.id.et_account)
+        val account = view.text.toString()
         return if (TextUtils.isEmpty(account)) throw IllegalStateException("账号参数不能为空!") else account
     }
 
     override fun getPwd(): String {
-        val pwd = et_pwd.text.toString()
+        val view = loginView.findViewById<AppCompatEditText>(R.id.et_pwd)
+        val pwd = view.text.toString()
         return if (TextUtils.isEmpty(pwd)) throw IllegalStateException("密码参数不能为空!") else pwd
     }
 

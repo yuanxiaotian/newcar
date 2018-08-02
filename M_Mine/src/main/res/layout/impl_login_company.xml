@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_company"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_edit_line"
+        android:drawableLeft="@drawable/home"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="@string/please_input_company"
+        android:paddingLeft="8dp"
+        android:text="demo"
+        android:textSize="@dimen/text_size" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edit_line"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="@string/input_username"
+        android:paddingLeft="8dp"
+        android:text="admin"
+        android:textSize="@dimen/text_size" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edit_line"
+        android:drawableLeft="@drawable/mima_icon"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="@string/input_password"
+        android:paddingLeft="8dp"
+        android:text="adminadmin"
+        android:textSize="@dimen/text_size" />
+</LinearLayout>
+
+
