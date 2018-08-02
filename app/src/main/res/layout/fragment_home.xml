@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_e8">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.youth.banner.Banner
+            android:id="@+id/slideshowView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:banner_default_image="@drawable/phones"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/c_w"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slideshowView">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/c_w"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/shouye1_select" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/c_e8" />
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_gravity="center_vertical"
+                android:autoStart="true"
+                android:background="@color/c_w"
+                android:flipInterval="3000"
+                android:inAnimation="@anim/anim_come_in"
+                android:outAnimation="@anim/anim_get_out" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_allCar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/c_w"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/home_location_but"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/whole_car"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/big_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_info"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/c_w"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/home_location_but"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/information_reg"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/big_text_size"
+            app:layout_constraintLeft_toRightOf="@+id/tv_allCar"
+            app:layout_constraintRight_toLeftOf="@+id/tv_location"
+            app:layout_constraintTop_toTopOf="@+id/tv_allCar" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/c_w"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/home_location_but"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/information_reg"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/big_text_size"
+            app:layout_constraintLeft_toRightOf="@+id/tv_info"
+            app:layout_constraintRight_toLeftOf="@+id/tv_violation"
+            app:layout_constraintTop_toTopOf="@+id/tv_allCar" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_violation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/c_w"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/home_weizhang_but"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/information_reg"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/big_text_size"
+            app:layout_constraintLeft_toRightOf="@+id/tv_location"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_allCar" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+

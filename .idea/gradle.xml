@@ -8,8 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/CarLocation" />
             <option value="$PROJECT_DIR$/Library" />
+            <option value="$PROJECT_DIR$/M_CarLocation" />
+            <option value="$PROJECT_DIR$/M_Mine" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

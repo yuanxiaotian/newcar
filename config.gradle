@@ -4,7 +4,7 @@ ext {
             sdk_version  : 27,
             min_sdk      : 16,
             target_sdk   : 27,
-            code         : 1,
+            code         : 3,
             name         : "1.0.0",
             tools_version: "27.0.3",
             id           : "com.xuliucar.newcar",

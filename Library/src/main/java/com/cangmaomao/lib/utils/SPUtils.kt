@@ -1,5 +1,6 @@
 package com.cangmaomao.lib.utils
 
+import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
 import android.support.v4.app.Fragment
@@ -17,6 +18,11 @@ object SPUtils {
 
     fun Fragment.create(name: String): SPUtils {
         sharedPreferences = activity!!.getSharedPreferences(name, Context.MODE_PRIVATE)
+        return SPUtils
+    }
+
+    fun Activity.create(name: String): SPUtils {
+        sharedPreferences = this.getSharedPreferences(name, Context.MODE_PRIVATE)
         return SPUtils
     }
 

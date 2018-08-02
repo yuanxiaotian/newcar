@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cangmaomao.lib" />
+<manifest package="com.cangmaomao.lib" />
