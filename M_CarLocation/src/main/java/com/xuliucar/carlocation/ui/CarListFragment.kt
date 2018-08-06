@@ -1,7 +1,10 @@
 package com.xuliucar.carlocation.ui
 
+import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
+import android.support.v7.widget.AppCompatButton
 import android.view.View
 import com.cangmaomao.lib.base.BaseNewFragment
 import com.cangmaomao.lib.utils.initRecycler
@@ -12,13 +15,15 @@ import com.xuliucar.carlocation.R
 import com.xuliucar.carlocation.adapter.CarListAdapter
 import com.xuliucar.carlocation.bean.CarsListBean
 import com.xuliucar.carlocation.contract.CarLocationContract
+import com.xuliucar.carlocation.event.LocationEvent
 import com.xuliucar.carlocation.presenter.CarListPresenter
 import kotlinx.android.synthetic.main.fragment_car_list.*
+import org.greenrobot.eventbus.EventBus
 
 class CarListFragment : BaseNewFragment<CarLocationContract.CarListPresenter>(), CarLocationContract.CarListView, OnItemClick {
 
+    private var dialog: AlertDialog? = null
     private lateinit var mAdapter: CarListAdapter
-
     override fun layViewId(): Int = R.layout.fragment_car_list
     override fun addViewId(): Int = 0
     override fun context(): Context = _mActivity
@@ -27,12 +32,23 @@ class CarListFragment : BaseNewFragment<CarLocationContract.CarListPresenter>(),
 
     override fun initView(savedInstanceState: Bundle?, view: View) {
         initRecycler(recyclerView)
-        mAdapter = CarListAdapter()
+        mAdapter = CarListAdapter(this)
         mAdapter.setOnItemClickListener(this)
         recyclerView.adapter = mAdapter
 
         CarListPresenter(this)
         p.start()
+    }
+
+    @SuppressLint("InflateParams")
+    override fun initShareDialog() {
+        if (dialog == null) {
+            dialog = AlertDialog.Builder(context()).create()
+            val view = layoutInflater.inflate(R.layout.fragment_location_dialog, null)
+            view.findViewById<AppCompatButton>(R.id.bt_cancel).setOnClickListener { dialog!!.dismiss() }
+            dialog!!.setView(view)
+        }
+        dialog!!.show()
     }
 
     override fun showData(data: MutableList<CarsListBean.DataBean.InfoBean>) {
@@ -43,6 +59,7 @@ class CarListFragment : BaseNewFragment<CarLocationContract.CarListPresenter>(),
         val list = mAdapter.data[p2]
         if (!list.isShare) {
             list.isSelect = !list.isSelect
+            EventBus.getDefault().post(LocationEvent(list.isSelect, list))
         } else {
             toast("当前车辆已经分享过!")
         }

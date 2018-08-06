@@ -12,4 +12,5 @@
     <dimen name="big_text_size">15sp</dimen>
     <dimen name="big_l_text_size">18sp</dimen>
     <dimen name="text_other_size">12sp</dimen>
+    <dimen name="radiobtn_style_size">20dp</dimen>
 </resources>

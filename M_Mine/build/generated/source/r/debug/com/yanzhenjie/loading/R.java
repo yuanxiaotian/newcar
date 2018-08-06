@@ -8,14 +8,14 @@ package com.yanzhenjie.loading;
 
 public final class R {
     public static final class id {
-        public static int loading_tv_message = 0x7f0c00c7;
-        public static int loading_view = 0x7f0c00c8;
+        public static int loading_tv_message = 0x7f0c00cc;
+        public static int loading_view = 0x7f0c00cd;
     }
     public static final class layout {
-        public static int loading_wait_dialog = 0x7f0f0039;
+        public static int loading_wait_dialog = 0x7f0f003d;
     }
     public static final class string {
-        public static int loading_default_messsage = 0x7f15015f;
+        public static int loading_default_messsage = 0x7f150164;
     }
     public static final class style {
         public static int loadingDialog = 0x7f16019f;

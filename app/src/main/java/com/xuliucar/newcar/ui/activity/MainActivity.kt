@@ -5,8 +5,8 @@ import com.cangmaomao.lib.base.BaseActivity
 import com.cangmaomao.lib.base.BasePresenter
 import com.cangmaomao.lib.event.AppEvent
 import com.cangmaomao.lib.utils.StatusBarUtil
-import com.xuliucar.carlocation.contract.CarLocationContract
-import com.xuliucar.carlocation.ui.CarLocationFragment
+import com.xuliucar.carlocation.ui.CarLocationMainFragment
+import com.xuliucar.carlocation.ui.CarLocationMapFragment
 import com.xuliucar.newcar.ui.fragment.MainFragment
 import com.xuliucar.me.ui.fragment.*
 import com.xuliucar.newcar.R
@@ -35,12 +35,6 @@ class MainActivity : BaseActivity<BasePresenter>() {
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(event: AppEvent) {
         when (event.flag) {
-            f_main -> loadRootFragment(addViewId(), MainFragment(), false, false)
-            f_login -> start(LoginFragment())
-            f_reg -> start(RegFragment())
-            f_feedBack -> start(FeedBack())
-            f_informationCenter -> start(InformationCenter())
-            f_carLocationFragment -> start(CarLocationFragment())
             f_peopleList -> {
                 val c = PeopleList()
                 c.arguments = event.bundle
@@ -56,6 +50,28 @@ class MainActivity : BaseActivity<BasePresenter>() {
                 c.arguments = event.bundle
                 start(c)
             }
+            f_carLocationMapFragment -> {
+                val c = CarLocationMapFragment()
+                c.arguments = event.bundle
+                start(c)
+            }
+            f_irregularitiesFragment -> {
+                val c = IrregularitiesFragment()
+                c.arguments = event.bundle
+                start(c)
+            }
+            f_irregularitiesDetailsFragment -> {
+                val c = IrregularitiesDetailsFragment()
+                c.arguments = event.bundle
+                start(c)
+            }
+            f_reg -> start(RegFragment())
+            f_feedBack -> start(FeedBack())
+            f_login -> start(LoginFragment())
+            f_informationCenter -> start(InformationCenter())
+            f_carLocationFragment -> start(CarLocationMainFragment())
+            f_updatePasswordFragment -> start(UpdatePasswordFragment())
+            f_main -> loadRootFragment(addViewId(), MainFragment(), false, false)
         }
     }
 

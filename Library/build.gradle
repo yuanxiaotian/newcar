@@ -58,6 +58,8 @@ dependencies {
     api rootProject.ext.dependencies.mid
     api rootProject.ext.dependencies.swipe
     api rootProject.ext.dependencies.multidex
+    api rootProject.ext.dependencies.map
+    api rootProject.ext.dependencies.location
     api rootProject.ext.dependencies.wavesidebar
     api rootProject.ext.dependencies.tinypinyin
     api rootProject.ext.dependencies.baseAdapter

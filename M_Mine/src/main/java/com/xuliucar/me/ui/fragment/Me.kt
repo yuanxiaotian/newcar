@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
+import android.text.TextUtils
 import android.view.View
 import com.cangmaomao.lib.action.*
 import com.cangmaomao.lib.base.BaseNewFragment
@@ -39,7 +40,7 @@ class Me : BaseNewFragment<MeContract.Presenter>(), MeContract.View {
         MePresenter(this)
         p.start()
         tv_info_c.setOnClickListener { EventBus.getDefault().post(AppEvent(f_informationCenter, null)) }
-        tv_pwd.setOnClickListener { EventBus.getDefault().post(AppEvent(f_changePwd, null)) }
+        tv_pwd.setOnClickListener { EventBus.getDefault().post(AppEvent(f_updatePasswordFragment, null)) }
         tv_feedback.setOnClickListener { EventBus.getDefault().post(AppEvent(f_feedBack, null)) }
         tv_logout.setOnClickListener { exitLogin() }
 
@@ -49,8 +50,8 @@ class Me : BaseNewFragment<MeContract.Presenter>(), MeContract.View {
     }
 
 
-    override fun toItemFragment(appPower: String, fragmentId: Int, itemId: String) {
-        if (appPower == "0") {
+    override fun toItemFragment(appPower: String?, fragmentId: Int, itemId: String) {
+        if (TextUtils.isEmpty(appPower) && appPower == "0") {
             toast(getString(R.string.power_tips))
         } else {
             val bundle = Bundle()

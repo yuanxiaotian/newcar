@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/radiobtn_style_size" />
+
+    <solid android:color="@color/c_1e" />
+
+    <size
+        android:width="@dimen/radiobtn_style_size"
+        android:height="@dimen/radiobtn_style_size" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/c_1e" />
+
+</shape>

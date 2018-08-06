@@ -72,7 +72,7 @@ val f_childWait = 0x01101133
 val f_feedBack = 0x01101134
 
 //密码修改
-val f_changePwd = 0x01101135
+val f_updatePasswordFragment = 0x01101135
 
 //个人中心——通知信息
 val f_informationCenter = 0x01101136
@@ -91,3 +91,12 @@ val f_showBigImage = 0x01101140
 
 //车辆地位
 val f_carLocationFragment = 0x01101141
+
+//车辆定位地图页面
+val f_carLocationMapFragment = 0x01101142
+
+//违规查询
+val f_irregularitiesFragment = 0x01101143
+
+//违规查询详情页面
+val f_irregularitiesDetailsFragment = 0x01101144

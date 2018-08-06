@@ -19,7 +19,6 @@ import org.greenrobot.eventbus.EventBus
 
 class LoginFragment : BaseNewFragment<MineContract.Presenter>(), MineContract.LoginView {
 
-
     private lateinit var loginView: View
 
     override fun layViewId(): Int = R.layout.a_login
@@ -66,11 +65,6 @@ class LoginFragment : BaseNewFragment<MineContract.Presenter>(), MineContract.Lo
         EventBus.getDefault().post(AppEvent(f_main, null))
     }
 
-    override fun showFail(e: Throwable) {
-        _mActivity.toast("异常：${e.message}")
-    }
-
-
     override fun getCompany(): String {
         val view = loginView.findViewById<AppCompatEditText>(R.id.et_company)
         val company = view.text.toString()
@@ -87,6 +81,10 @@ class LoginFragment : BaseNewFragment<MineContract.Presenter>(), MineContract.Lo
         val view = loginView.findViewById<AppCompatEditText>(R.id.et_pwd)
         val pwd = view.text.toString()
         return if (TextUtils.isEmpty(pwd)) throw IllegalStateException("密码参数不能为空!") else pwd
+    }
+
+    override fun showFail(e: Throwable) {
+        _mActivity.toast("异常：${e.message}")
     }
 
 }

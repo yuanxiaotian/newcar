@@ -27,7 +27,7 @@ interface MeContract {
         fun exitLogin()
 
         //去其他页面
-        fun toItemFragment(appPower: String, fragmentId: Int, itemId: String)
+        fun toItemFragment(appPower: String?, fragmentId: Int, itemId: String)
 
         //显示请求信息
         fun showData(data: MeBean.DataBean)

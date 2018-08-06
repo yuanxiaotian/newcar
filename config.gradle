@@ -7,7 +7,7 @@ ext {
             code         : 3,
             name         : "1.0.0",
             tools_version: "27.0.3",
-            id           : "com.xuliucar.newcar",
+            id           : "com.xuliucar.xuli.xuliucar",
             id_me        : "com.xuliucar.me"
 
     ]
@@ -54,6 +54,8 @@ ext {
             swipe                  : "com.yanzhenjie:recyclerview-swipe:1.1.4",
             wavesidebar            : "com.gjiazhe:wavesidebar:1.3",
             tinypinyin             : "com.github.promeg:tinypinyin:2.0.3", // TinyPinyin核心包，约80KB
-            rxpermissions          : "com.github.tbruyelle:rxpermissions:0.10.2"
+            rxpermissions          : "com.github.tbruyelle:rxpermissions:0.10.2",
+            map                    : "com.amap.api:3dmap:5.0.0",
+            location               : "com.amap.api:location:3.3.0"
     ]
 }

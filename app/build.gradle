@@ -13,6 +13,7 @@ android {
         versionCode rootProject.ext.android.code
         versionName rootProject.ext.android.name
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
         ndk {
             abiFilters 'armeabi', 'x86'
             // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
@@ -22,8 +23,31 @@ android {
                 XG_ACCESS_KEY: "AX7M2448RCMX",
         ]
     }
+
+    signingConfigs {
+        debug {
+            storeFile file("D:\\ucar.jks")
+            storePassword "www134212"
+            keyAlias "ucar"
+            keyPassword "www134212"
+        }
+        release {
+            storeFile file("D:\\ucar.jks")
+            storePassword "www134212"
+            keyAlias "ucar"
+            keyPassword "www134212"
+        }
+    }
+
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

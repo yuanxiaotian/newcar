@@ -50,4 +50,10 @@
     <color name="c_t_00_99">#70200000</color><!--t:带透明度-->
     <color name="c_w_20">#20ffffff</color>
 
+
+    <!--
+    个别
+    -->
+    <color name="c_f8">#f8ac35</color>
+
 </resources>

@@ -12,6 +12,7 @@
     <color name="c_e8">#E8E8E8</color>
     <color name="c_f4">#f4f4f4</color>
     <color name="c_f5">#f5f5f5</color>
+    <color name="c_f8">#f8ac35</color>
     <color name="c_fc">#fcfcfc</color>
     <color name="c_ffa">#FF7F00</color>
     <color name="c_reg">#FF0000</color>
@@ -42,6 +43,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="big_l_text_size">18sp</dimen>
     <dimen name="big_text_size">15sp</dimen>
+    <dimen name="radiobtn_style_size">20dp</dimen>
     <dimen name="text_other_size">12sp</dimen>
     <dimen name="text_size">13sp</dimen>
     <dimen name="title_padding_top">16sp</dimen>
@@ -266,6 +268,8 @@
     <string name="assistant_driver_phone_two">副班司机联系电话2</string>
     <string name="assistant_driver_photo">副司机照</string>
     <string name="auto_login">自动登录</string>
+    <string name="big_bus">大型客车</string>
+    <string name="big_car">大型货车</string>
     <string name="cancel">取消</string>
     <string name="carOwner_card_address">车主身份证地址</string>
     <string name="carOwner_card_nowAdd">车主现住址</string>
@@ -336,8 +340,10 @@
     <string name="getPhoto">从相册选择</string>
     <string name="h5_show">H5展示</string>
     <string name="handle_select_illegal">办理已选违章</string>
+    <string name="hang_car">挂车</string>
     <string name="height">高</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_share_account">输入要分享账号</string>
     <string name="home_gg">公告</string>
     <string name="home_index">首页</string>
     <string name="home_mine">我的</string>
@@ -351,6 +357,7 @@
     <string name="illegal_query">违章查询</string>
     <string name="illegal_self_query">自主查询</string>
     <string name="image">""</string>
+    <string name="in_bus">中型客车</string>
     <string name="index">首页</string>
     <string name="index_title">旭利 · 优卡(车队版)</string>
     <string name="information_center">信息中心</string>
@@ -435,6 +442,7 @@
     <string name="select_Advent">　临期　</string>
     <string name="select_custom"> 自定义 </string>
     <string name="select_pass">　过期　</string>
+    <string name="select_type">选择类型</string>
     <string name="self_num">自编号</string>
     <string name="semicolon">:</string>
     <string name="sendMessage_title">短信发送</string>
@@ -455,11 +463,14 @@
     <string name="send_time">发送时间: </string>
     <string name="service_charge">服务费:</string>
     <string name="sex">性别</string>
+    <string name="share_account">分享账号</string>
+    <string name="small_car">小型货车</string>
     <string name="sms_balance">账户余额</string>
     <string name="snack_infor">请检查网络</string>
     <string name="staff">员工</string>
     <string name="start_commission_manager_date">委托管理起始日期</string>
     <string name="start_date">起始日期</string>
+    <string name="start_query">开始查询</string>
     <string name="start_time">起始时间:</string>
     <string name="status">状态</string>
     <string name="submit_reg">提交申请</string>
@@ -479,6 +490,7 @@
     <string name="total_fines">总滞纳金</string>
     <string name="total_penalty">总罚金</string>
     <string name="total_send">累积已发</string>
+    <string name="tow_car">牵引货车</string>
     <string name="tpdate">道路运输证发证日期</string>
     <string name="type_certificate">从业资格证类别</string>
     <string name="update_success">更新成功!</string>
@@ -500,20 +512,20 @@
         <item name="android:windowBackground">@color/c_e8</item>
     </style>
     <style name="DialogTheme" parent="@android:style/Theme.Dialog">
-        
+        <!-- 边框 -->
         <item name="android:windowFrame">@null</item>
-        
+        <!-- 是否浮现在activity之上 -->
         <item name="android:windowIsFloating">true</item>
-        
+        <!-- 半透明 -->
         <item name="android:windowIsTranslucent">true</item>
-        
+        <!-- 无标题 -->
         <item name="android:windowNoTitle">true</item>
         <item name="android:background">@android:color/transparent</item>
-        
+        <!-- 背景透明 -->
         <item name="android:windowBackground">@android:color/transparent</item>
-        
+        <!-- 模糊 -->
         <item name="android:backgroundDimEnabled">true</item>
-        
+        <!-- 遮罩层 -->
         <item name="android:backgroundDimAmount">0.5</item>
     </style>
     <style name="pop_style">

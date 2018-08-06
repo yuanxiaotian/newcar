@@ -8,6 +8,7 @@ import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import com.cangmaomao.lib.action.f_carLocationFragment
+import com.cangmaomao.lib.action.f_irregularitiesFragment
 import com.cangmaomao.lib.action.f_notice
 import com.cangmaomao.lib.base.BaseNewFragment
 import com.cangmaomao.lib.config.AppPower
@@ -49,6 +50,8 @@ class HomePageFragment : BaseNewFragment<HomePageContract.Presenter>(), HomePage
         p.start()
 
         tv_location.setOnClickListener { EventBus.getDefault().post(AppEvent(f_carLocationFragment, null)) }
+
+        tv_violation.setOnClickListener { EventBus.getDefault().post(AppEvent(f_irregularitiesFragment, null)) }
 
         setListener()
     }

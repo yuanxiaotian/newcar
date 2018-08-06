@@ -26,7 +26,7 @@ public final class R {
         public static int fragmentation_ic_stack = 0x7f090075;
     }
     public static final class id {
-        public static int hierarchy = 0x7f0c00a8;
-        public static int isexpand = 0x7f0c00b9;
+        public static int hierarchy = 0x7f0c00ab;
+        public static int isexpand = 0x7f0c00bc;
     }
 }

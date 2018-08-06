@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_e8">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_view" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/account_integral"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_square_down_left"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="账号积分：50"
+        android:textColor="@color/c_1e"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/today_give"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/today_give"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_square_down_right"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="今日赠送：6/10"
+        android:textColor="@color/c_1e"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toRightOf="@+id/account_integral"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/centre_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_square"
+        android:padding="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_integral">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/c_w"
+            android:padding="15dp"
+            android:text="@string/License_plate"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/textView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/c_w"
+            android:padding="15dp"
+            android:text="@string/frame_last_six_num"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/c_w"
+            android:padding="15dp"
+            android:text="@string/vechicle_properties"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/textView1"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/c_w"
+            android:padding="15dp"
+            android:text="@string/Vehicle_type"
+            android:textColor="@color/c_2c"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/textView1"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_car"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0.8dp"
+            android:background="@color/c_w"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintLeft_toRightOf="@+id/textView2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+            <RadioButton
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/radiobtn_style"
+                android:drawablePadding="5dp"
+                android:text="单位"
+                android:textColor="@color/c_2c"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobtn_style"
+                android:drawablePadding="5dp"
+                android:text="个人"
+                android:textColor="@color/c_2c"
+                android:textSize="@dimen/text_size" />
+
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@color/c_w"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/list_cdd_but"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/select_type"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintLeft_toRightOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            tools:ignore="RtlHardcoded" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/tv_num"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/c_w"
+            android:gravity="center_vertical"
+            android:hint="@string/frame_last_six_num_tips"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/textView1"
+            app:layout_constraintLeft_toRightOf="@+id/textView1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView1"
+            tools:ignore="RtlHardcoded" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/tv_license_plate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/c_w"
+            android:gravity="center_vertical"
+            android:hint="@string/input_plate_num_tips"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintLeft_toRightOf="@+id/textView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            tools:ignore="RtlHardcoded" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.8dp"
+            android:background="@color/c_e8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.8dp"
+            android:background="@color/c_e8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.8dp"
+            android:background="@color/c_e8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/start_query"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_button"
+        android:gravity="center"
+        android:text="@string/start_query"
+        android:textColor="@color/c_w"
+        android:textSize="@dimen/big_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centre_view" />
+
+</android.support.constraint.ConstraintLayout>

@@ -20,10 +20,10 @@ public final class R {
         public static int v_fragment_pop_exit = 0x7f010020;
     }
     public static final class drawable {
-        public static int fragmentation_help = 0x7f090068;
-        public static int fragmentation_ic_expandable = 0x7f090069;
-        public static int fragmentation_ic_right = 0x7f09006a;
-        public static int fragmentation_ic_stack = 0x7f09006b;
+        public static int fragmentation_help = 0x7f090069;
+        public static int fragmentation_ic_expandable = 0x7f09006a;
+        public static int fragmentation_ic_right = 0x7f09006b;
+        public static int fragmentation_ic_stack = 0x7f09006c;
     }
     public static final class id {
         public static int hierarchy = 0x7f0c005e;
